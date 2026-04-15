@@ -64,12 +64,12 @@ Die Darstellung erfolgt als strukturierte Kartenansicht innerhalb des Containers
 
 ## Technische Hinweise
 
-- Block-Registrierung erfolgt dynamisch über `block.json` im `src/blocks`-Verzeichnis :contentReference[oaicite:0]{index=0}
+- Block-Registrierung erfolgt dynamisch über `block.json` im `src/blocks`-Verzeichnis
 - Zwei getrennte Blöcke:
-  - `ud/team-cards` (Container) :contentReference[oaicite:1]{index=1}
-  - `ud/team-card` (Einzelkarte) :contentReference[oaicite:2]{index=2}
-- Attribute der Team Card umfassen u. a. Name, Rolle, Bild sowie optionale Kontaktfelder :contentReference[oaicite:3]{index=3}
-- Plugin lädt zentrale Funktionen über Includes (`helpers.php`, `render.php`, `enqueue.php`) :contentReference[oaicite:4]{index=4}
+  - `ud/team-cards` (Container)
+  - `ud/team-card` (Einzelkarte)
+- Attribute der Team Card umfassen u. a. Name, Rolle, Bild sowie optionale Kontaktfelder
+- Plugin lädt zentrale Funktionen über Includes (`helpers.php`, `render.php`, `enqueue.php`)
 
 ---
 ## Autor
