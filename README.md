@@ -72,7 +72,8 @@ Die Darstellung erfolgt als strukturierte Kartenansicht innerhalb des Containers
 - Plugin lädt zentrale Funktionen über Includes (`helpers.php`, `render.php`, `enqueue.php`) :contentReference[oaicite:4]{index=4}  
 
 ---
-
+Bildquelle: Foto von [Rachel McDermott](https://unsplash.com/de/@mrsrachelmcdermott?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) auf Unsplash
+---
 ## Autor
 
 [ulrich.digital gmbh](https://ulrich.digital)
