@@ -43,7 +43,7 @@ Die Blöcke sind kombinierbar und ermöglichen flexible Team-Darstellungen inner
 
 ## Editor
 
-![Screenshot des Blocks im Editor mit Feldern für Name, Funktion, Bild und Kontaktdaten. Inhalte können direkt im Block bearbeitet werden.](assets/editor-team-card.png)
+![Screenshot des Blocks im Editor mit Feldern für Name, Funktion, Bild und Kontaktdaten. Inhalte können direkt im Block bearbeitet werden.](assets/ud-team-cards-block-editor.png)
 
 Die Inhalte werden direkt im Block gepflegt:
 
