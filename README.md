@@ -64,18 +64,12 @@ Die Darstellung erfolgt als strukturierte Kartenansicht innerhalb des Containers
 
 ## Technische Hinweise
 
-- Block-Registrierung erfolgt dynamisch über `block.json` im `src/blocks`-Verzeichnis :contentReference[oaicite:0]{index=0}  
+- Block-Registrierung erfolgt dynamisch über `block.json` im `src/blocks`-Verzeichnis :contentReference[oaicite:0]{index=0}
 - Zwei getrennte Blöcke:
-  - `ud/team-cards` (Container) :contentReference[oaicite:1]{index=1}  
-  - `ud/team-card` (Einzelkarte) :contentReference[oaicite:2]{index=2}  
-- Attribute der Team Card umfassen u. a. Name, Rolle, Bild sowie optionale Kontaktfelder :contentReference[oaicite:3]{index=3}  
-- Plugin lädt zentrale Funktionen über Includes (`helpers.php`, `render.php`, `enqueue.php`) :contentReference[oaicite:4]{index=4}  
-
----
-
-## Bildquelle:
-
-Foto von [Rachel McDermott](https://unsplash.com/de/@mrsrachelmcdermott?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) auf Unsplash
+  - `ud/team-cards` (Container) :contentReference[oaicite:1]{index=1}
+  - `ud/team-card` (Einzelkarte) :contentReference[oaicite:2]{index=2}
+- Attribute der Team Card umfassen u. a. Name, Rolle, Bild sowie optionale Kontaktfelder :contentReference[oaicite:3]{index=3}
+- Plugin lädt zentrale Funktionen über Includes (`helpers.php`, `render.php`, `enqueue.php`) :contentReference[oaicite:4]{index=4}
 
 ---
 ## Autor
@@ -84,5 +78,9 @@ Foto von [Rachel McDermott](https://unsplash.com/de/@mrsrachelmcdermott?utm_sour
 
 ## Lizenz
 
-GPL v2 or later  
+GPL v2 or later
 https://www.gnu.org/licenses/gpl-2.0.html
+
+## Bildquelle:
+
+Foto von [Rachel McDermott](https://unsplash.com/de/@mrsrachelmcdermott?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) auf Unsplash
