@@ -1,0 +1,59 @@
+@use "../utils/tokens";
+/* =============================================================== *\
+    Design Tokens Farbskalen:
+    --ud-{category}-{scale} (100–900)
+    positive | warning | error | info | neutral
+    Beispiel: var(--ud-positive-500)
+
+    Semantische Tokens:
+    --ud-color-{success | warning | error | info | text | text-muted | bg | surface | border}
+ \* =============================================================== */
+
+.wp-block-ud-team-cards {
+	display: block;
+	background-color: var(--ud-neutral-400);
+	padding: 20px;
+	border-radius: 20px;
+	> .block-editor-inner-blocks {
+		display: block;
+		width: 100%;
+	}
+
+	> .block-editor-inner-blocks > .block-editor-block-list__layout {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 420px);
+		gap: 42px;
+		justify-content: center;
+	}
+
+	.block-editor-button-block-appender {
+		padding: 8px;
+		height: unset;
+		max-height: unset;
+		border-width: 0;
+		border-radius: 112px;
+		background-color: var(--wp-admin-theme-color);
+		color: #fff;
+		opacity: 1;
+		box-shadow: none;
+
+		&:hover {
+			color: #f0f0f0;
+		}
+	}
+}
+
+.block-editor-block-list__layout
+	> .block-editor-block-list__block.wp-block-ud-team-cards {
+	width: 100%;
+	max-width: none;
+
+	&::after {
+		border-radius: 20px;
+	}
+
+	&.is-selected,
+	&:focus {
+		border-color: transparent;
+	}
+}

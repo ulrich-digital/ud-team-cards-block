@@ -1,0 +1,217 @@
+@use "../utils/tokens";
+
+/* =============================================================== *\
+    Design Tokens Farbskalen:
+    --ud-{category}-{scale} (100–900)
+    positive | warning | error | info | neutral
+    Beispiel: var(--ud-positive-500)
+
+    Semantische Tokens:
+    --ud-color-{success | warning | error | info | text | text-muted | bg | surface | border}
+\* =============================================================== */
+
+.wp-block-ud-team-card {
+	--ud-team-card-editor-image-bg: var(--ud-neutral-200);
+	--ud-team-card-editor-remove-bg: var(--ud-neutral-100);
+	--ud-team-card-editor-remove-hover-color: var(--ud-info-600);
+	--ud-team-card-editor-link-trigger-bg: rgba(255, 255, 255, 0.12);
+	--ud-team-card-editor-link-trigger-bg-hover: rgba(255, 255, 255, 0.2);
+	--ud-team-card-editor-link-trigger-color: var(--ud-neutral-100);
+	--ud-team-card-editor-link-trigger-focus: var(--ud-info-600);
+	--ud-team-card-editor-link-trigger-shadow: 0 0 0 2px #fff,
+		0 0 0 4px var(--ud-team-card-editor-link-trigger-focus);
+	background-color: var(--ud-neutral-300);
+	.ud-team-card__image {
+		position: relative;
+		background-color: var(--ud-team-card-editor-image-bg);
+
+		&:hover,
+		&:focus-within {
+			.ud-team-card__image-remove {
+				opacity: 1;
+				pointer-events: auto;
+			}
+		}
+
+		.ud-team-card__image-control {
+			position: absolute;
+			inset: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.ud-team-card__image-button {
+			display: block;
+			margin: 0;
+			border: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			background: transparent;
+			cursor: pointer;
+		}
+
+		.ud-team-card__image-remove {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			z-index: 2;
+			transform: translate(-50%, -50%);
+			opacity: 0;
+			pointer-events: none;
+			background: var(--ud-team-card-editor-remove-bg);
+			transition: opacity 0.2s ease;
+
+			&.components-button.is-secondary:hover {
+				background: var(--ud-team-card-editor-remove-bg);
+				color: var(--ud-team-card-editor-remove-hover-color);
+			}
+		}
+	}
+
+	.ud-team-card__content {
+		.ud-team-card__name {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+
+.ud-team-card__contact-fields {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin-top: 12px;
+
+	.components-base-control {
+		margin: 0;
+	}
+
+	.components-text-control__input {
+		padding: 10px 14px;
+		border: 1px solid var(--ud-color-border, #ddd);
+		border-radius: 8px;
+		background-color: #fff;
+
+		font-size: 14px;
+		line-height: 1.4;
+
+		transition: border-color 0.2s, box-shadow 0.2s;
+
+		&:focus {
+			border-color: var(--ud-color-primary, #000);
+			box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08);
+			outline: none;
+		}
+	}
+}
+
+
+	.ud-team-card__button-wrap {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		width: 100%;
+		margin-top: 0.75rem;
+
+		.wp-block-buttons {
+			margin: 0;
+
+			.wp-block-button {
+				margin: 0;
+
+				.ud-team-card__button-editable {
+					position: relative;
+					display: inline-flex;
+					align-items: stretch;
+
+					.wp-block-button__link {
+						position: relative;
+						z-index: 1;
+						display: inline-flex;
+						align-items: center;
+						margin: 0;
+						padding-right: 54px;
+						min-height: 46px;
+					}
+
+					&:hover,
+					&:focus-within {
+						.ud-team-card__link-trigger {
+							opacity: 1;
+							background: var(
+								--ud-team-card-editor-link-trigger-bg-hover
+							);
+						}
+					}
+
+					.ud-team-card__link-trigger {
+						position: absolute;
+						top: 50%;
+						right: 12px;
+						z-index: 3;
+						display: inline-flex;
+						align-items: center;
+						justify-content: center;
+						margin: 0;
+						border: 0;
+						padding: 0;
+						width: 28px;
+						height: 28px;
+						border-radius: 999px;
+						background: var(--ud-team-card-editor-link-trigger-bg);
+						color: var(--ud-team-card-editor-link-trigger-color);
+						cursor: pointer;
+						opacity: 0.9;
+						transform: translateY(-50%);
+						transition:
+							background 0.2s ease,
+							opacity 0.2s ease,
+							transform 0.2s ease;
+
+						&:focus {
+							outline: none;
+							box-shadow: var(
+								--ud-team-card-editor-link-trigger-shadow
+							);
+						}
+
+						svg {
+							width: 16px;
+							height: 16px;
+							fill: currentColor;
+						}
+
+						.dashicons {
+							display: block;
+							width: 16px;
+							height: 16px;
+							font-size: 16px;
+							line-height: 16px;
+							color: currentColor;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.ud-team-card__link-popover {
+		padding: 12px;
+		min-width: 320px;
+	}
+}
+
+.block-editor-block-list__layout {
+	.block-editor-block-list__block.wp-block-ud-team-card {
+		&::after {
+			border-radius: 20px;
+		}
+
+		&.is-selected,
+		&:focus {
+			border-color: transparent;
+		}
+	}
+}

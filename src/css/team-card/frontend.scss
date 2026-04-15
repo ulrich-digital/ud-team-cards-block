@@ -1,0 +1,57 @@
+@use "../utils/tokens";
+
+.wp-block-ud-team-card {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	border-radius: 20px;
+	overflow: hidden; // wichtig!
+	background-color: #fff;
+
+	/* Bild (full-bleed) */
+	.ud-team-card__image {
+		width: 100%;
+		aspect-ratio: 4 / 4;
+		overflow: hidden;
+		.ud-team-card__image-img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+	}
+
+	/* Content bekommt das Padding */
+	.ud-team-card__content {
+		display: flex;
+		flex-direction: column;
+		padding: 24px;
+		font-size: 18px;
+		.ud-team-card__name {
+			font-size: var(--wp--preset--font-size--large, 1.5rem);
+			line-height: 1.2;
+		}
+
+		.ud-team-card__role {
+			margin: 0 0 1rem;
+			color: var(--ud-color-text-muted, #666);
+		}
+
+		.ud-team-card__email {
+			margin-bottom: 0.25rem;
+		}
+
+		.ud-team-card__actions {
+			.wp-block-button__link {
+				&::after {
+					display: inline-block;
+					transition: transform 0.2s ease;
+				}
+
+				&:hover::after {
+					transform: translateX(4px);
+				}
+			}
+		}
+	}
+}

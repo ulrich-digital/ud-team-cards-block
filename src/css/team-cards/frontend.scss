@@ -1,0 +1,10 @@
+@use "../utils/tokens";
+
+.wp-block-ud-team-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 420px);
+	gap: 42px;
+	justify-content: center;
+	box-sizing: border-box;
+	margin: 2rem auto;
+}

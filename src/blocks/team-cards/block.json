@@ -1,0 +1,25 @@
+{
+  "apiVersion": 3,
+  "name": "ud/team-cards",
+  "title": "UD Block: Team Cards",
+  "category": "design",
+  "icon": "screenoptions",
+  "description": "Container für Team Cards.",
+  "textdomain": "team-cards-block-ud",
+
+  "supports": {
+    "html": false,
+    "anchor": true,
+
+    "align": ["wide", "full"],
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+
+  "editorScript": "file:../../../build/team-cards-editor-script.js",
+  "editorStyle": "file:../../../build/team-cards-editor-style.css",
+  "script": "file:../../../build/team-cards-frontend-script.js",
+  "style": "file:../../../build/team-cards-frontend-style.css"
+}

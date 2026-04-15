@@ -1,0 +1,61 @@
+{
+  "apiVersion": 3,
+  "name": "ud/team-card",
+  "title": "UD Block: Team Card",
+  "category": "design",
+  "icon": "screenoptions",
+  "description": "Einzelne Team-Person mit Bild, Funktion und optionalen Kontaktdaten.",
+  "attributes": {
+    "name": {
+      "type": "string",
+      "default": ""
+    },
+    "role": {
+      "type": "string",
+      "default": ""
+    },
+    "email": {
+      "type": "string",
+      "default": ""
+    },
+    "phone": {
+      "type": "string",
+      "default": ""
+    },
+    "showContact": {
+      "type": "boolean",
+      "default": false
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "imageId": {
+      "type": "number"
+    },
+    "imageAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "buttonText": {
+      "type": "string",
+      "source": "html",
+      "selector": ".wp-block-button__link"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".wp-block-button__link",
+      "attribute": "href"
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "textdomain": "team-cards-block-ud",
+  "editorScript": "file:../../../build/team-card-editor-script.js",
+  "editorStyle": "file:../../../build/team-card-editor-style.css",
+  "script": "file:../../../build/team-card-frontend-script.js",
+  "style": "file:../../../build/team-card-frontend-style.css"
+}
