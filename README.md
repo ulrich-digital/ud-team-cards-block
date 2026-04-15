@@ -56,7 +56,7 @@ Die Inhalte werden direkt im Block gepflegt:
 
 ## Frontend
 
-![Beispielhafte Darstellung mehrerer Team Cards im Frontend mit Bild, Name, Funktion und optionalen Kontaktdaten.](assets/frontend-team-cards.png)
+![Beispielhafte Darstellung mehrerer Team Cards im Frontend mit Bild, Name, Funktion und optionalen Kontaktdaten.](assets/ud-team-card-block-frontend.png)
 
 Die Darstellung erfolgt als strukturierte Kartenansicht innerhalb des Containers. Layout und Styling werden über das Theme bzw. die Block-Styles gesteuert.
 
