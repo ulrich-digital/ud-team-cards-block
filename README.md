@@ -21,7 +21,7 @@ Die Blöcke sind kombinierbar und ermöglichen flexible Team-Darstellungen inner
 - Einzelne Team Cards mit:
   - Name und Funktion
   - Bild (inkl. Alt-Text)
-  - Optionalen Kontaktdaten (E-Mail, Telefon)
+  - E-Mail und Telefon, sofern ausgefüllt
 - Optionaler Button pro Karte (z. B. für Profilseite)
 - Mehrere Team Cards innerhalb eines Containers möglich
 - Responsive Darstellung
@@ -49,7 +49,7 @@ Die Inhalte werden direkt im Block gepflegt:
 
 - Name und Funktion als Textfelder
 - Bildauswahl über Mediathek
-- Kontaktdaten optional aktivierbar
+- Kontaktdaten werden angezeigt, wenn sie ausgefüllt sind
 - Button-Text und Link direkt im Block editierbar
 
 ---
