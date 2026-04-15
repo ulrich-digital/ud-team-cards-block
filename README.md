@@ -73,7 +73,9 @@ Die Darstellung erfolgt als strukturierte Kartenansicht innerhalb des Containers
 
 ---
 
-Bildquelle: Foto von [Rachel McDermott](https://unsplash.com/de/@mrsrachelmcdermott?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) auf Unsplash
+## Bildquelle:
+
+Foto von [Rachel McDermott](https://unsplash.com/de/@mrsrachelmcdermott?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) auf Unsplash
 
 ---
 ## Autor
