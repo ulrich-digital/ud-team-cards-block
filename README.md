@@ -81,6 +81,6 @@ Die Darstellung erfolgt als strukturierte Kartenansicht innerhalb des Containers
 GPL v2 or later
 https://www.gnu.org/licenses/gpl-2.0.html
 
-## Bildquelle:
+## Bildquelle
 
-Foto von [Rachel McDermott](https://unsplash.com/de/@mrsrachelmcdermott?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) auf Unsplash
+[Rachel McDermott](https://unsplash.com/de/@mrsrachelmcdermott?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
